@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/arrays.xml -->
+<resources>
+    <string-array name="search_engine_options">
+        <item>Bing</item>
+        <item>Google</item>
+        <item>Baidu</item>
+        <!-- Add more search engine options if needed -->
+    </string-array>
+</resources>

@@ -1,0 +1,49 @@
+<!-- fragment_search.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchFragmentContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+  <!--  <Button
+        android:id="@+id/connect_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search" />-->
+    <!-- Search layout at the bottom -->
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"> <!-- Align search layout to the bottom -->
+
+        <Spinner
+            android:id="@+id/search_engine_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/search_engine_options" />
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:hint="Enter search query" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search" />
+
+        <!--   <Button
+               android:id="@+id/tree_button"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="T" />
+   -->
+    </LinearLayout>
+
+</RelativeLayout>
